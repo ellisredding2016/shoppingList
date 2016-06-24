@@ -1,0 +1,41 @@
+*{
+	background-color: linen;
+}
+
+h1 {
+	text-align: center;
+	font-size:5rem;
+	margin-bottom:15;
+
+}
+
+h2 {
+	font-size:4rem;
+}
+
+.list-group-item {
+	font-size:3rem;
+	/*height:65px;*/
+}
+#leftSpace {
+	
+	background-image: url("http://www.i-akumal.com/sites/default/files/produce%20in%20crates.jpg");
+	background-repeat: no-repeat;
+	height:1000px;
+}
+
+#needed{
+	margin-bottom:15rem;
+}
+#plus, #ok, #minus{
+	font-size: 8rem;
+	padding: 3rem;
+	text-align: center;
+}
+
+#input{
+	margin: 0 auto;
+	padding-top: 4rem;
+	padding-bottom:2rem;
+	width:45%;
+}

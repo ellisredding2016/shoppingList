@@ -3,6 +3,7 @@ $(document).ready(function(){
 		e.preventDefault();
 		if($("#itemEntry").val() != ""){
 			$("#shoppingList").append("<li class=\"listItem needed\">"+$("#itemEntry").val()+"<span class=\"fa fa-trash-o \"></span></li>");
+			$("#itemEntry").val("");
 		}
 		else{
 			alert("The Item to Add Cannot be Blank.")

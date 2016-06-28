@@ -47,45 +47,50 @@ h1 {
 	background-image: url("https://static.pexels.com/photos/57426/paprika-vegetables-colorful-food-57426.jpeg");
 	background-size: 100%;
 	background-repeat: no-repeat;
-	width: 75%;
+	width:90%;
 	height: 1000px;
 	margin: 0px auto;
 	z-index: 1;
 	position: relative;
-
 }
-
-form{
-	position: absolute;
-	top:205px;
-	left:33%;
+#info {
+	width:35%;
+	height: 100%;
+	margin: 0 auto;
+	opacity:.5;
+}
+#listFormDiv{
+	
 	margin: 10px auto;
 	text-align: center;
 	z-index: 15;
+	width:100%;
 }
 
 #itemEntry, #itemSubmit{
-
-	font-size: 4rem;
 	background-color: lightgray;
 	color:firebrick;
 	margin: 3px auto;
+}
 
+#itemEntry {
+	width:80%;
+	font-size: 4rem;
+}
+
+#itemSubmit{
+	width:15%;
+	font-size: 2rem;
 }
 
 #listField{
-	
-	position: absolute;
-	top:305px;
-	left:33%;
-	z-index:10;
-	margin: 0px auto;
-	width: 35%;
-	height: 900px;
-	opacity:.5;
+	margin: 0px auto;		
+	z-index:10;	
+	height: 900px;	
 	text-align: center;
 	
 }
+
 h2{
 	font-size: 3rem
 }
@@ -102,3 +107,29 @@ ul{
 	margin-top:10px;
 	background-color: inherit;
 }
+@media only screen and (max-width: 1500px){
+	#info{
+		width:60%;
+	}
+}
+
+@media only screen and (max-width: 1000px){
+	h1 {
+		font-size: 2.5rem;
+	}
+
+	#info{
+		width:85%;
+	}
+
+	#itemSubmit {
+		font-size: 1rem;
+	}
+
+	#itemEntry {
+		font-size: 2.5rem;
+	}
+
+
+}
+

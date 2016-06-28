@@ -1,41 +1,104 @@
 *{
 	background-color: linen;
+	font-family: 'Open Sans', sans-serif;
 }
+
+.stroked{ 
+	text-decoration: line-through;
+	background-color: inherit;
+	font-weight: lighter;
+	font-style: italic;
+	letter-spacing: .9rem;
+	text-shadow: 0 0;
+	border-width: 0px; 
+}
+
+.needed{
+	background-color:lightcoral;
+	color: black;
+	font-weight: bold;
+	letter-spacing: 1.2rem;
+	text-shadow: 3px 3px firebrick;
+	border-style:outset;
+	border-width:3px;
+}
+
+.hovered{
+	background-color:lightskyblue;
+}
+
+
 
 h1 {
 	text-align: center;
+	border-radius:25px;
 	font-size:5rem;
-	margin-bottom:15;
+	margin:35px auto ;
+	border-style: outset;
+	color:lightgray;
+	background-color: firebrick;
+	text-shadow:5px 5px black;
+	width: 55%;
+	padding:15px;
 
 }
 
-h2 {
-	font-size:4rem;
-}
-
-.list-group-item {
-	font-size:3rem;
-	/*height:65px;*/
-}
-#leftSpace {
-	
-	background-image: url("http://www.i-akumal.com/sites/default/files/produce%20in%20crates.jpg");
+#backgroundImage{
+	background-image: url("https://static.pexels.com/photos/57426/paprika-vegetables-colorful-food-57426.jpeg");
+	background-size: 100%;
 	background-repeat: no-repeat;
-	height:1000px;
+	width: 75%;
+	height: 1000px;
+	margin: 0px auto;
+	z-index: 1;
+	position: relative;
+
 }
 
-#needed{
-	margin-bottom:15rem;
-}
-#plus, #ok, #minus{
-	font-size: 8rem;
-	padding: 3rem;
+form{
+	position: absolute;
+	top:205px;
+	left:33%;
+	margin: 10px auto;
 	text-align: center;
+	z-index: 15;
 }
 
-#input{
-	margin: 0 auto;
-	padding-top: 4rem;
-	padding-bottom:2rem;
-	width:45%;
+#itemEntry, #itemSubmit{
+
+	font-size: 4rem;
+	background-color: lightgray;
+	color:firebrick;
+	margin: 3px auto;
+
+}
+
+#listField{
+	
+	position: absolute;
+	top:305px;
+	left:33%;
+	z-index:10;
+	margin: 0px auto;
+	width: 35%;
+	height: 900px;
+	opacity:.5;
+	text-align: center;
+	
+}
+h2{
+	font-size: 3rem
+}
+ul{
+	background-color:linen;
+	font-size: 3rem;
+	list-style: none;
+	padding-right: 3rem;
+}
+
+#listField .listItem .fa {
+	float: right;
+	margin-right: 25px;
+	margin-top:10px;
+	background-color: inherit;
 }

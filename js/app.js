@@ -1,37 +1,34 @@
 $(document).ready(function(){
+	$("#listForm").submit(function(e) {
+		e.preventDefault();
+		if($("#itemEntry").val() != ""){
+			$("#shoppingList").append("<li class=\"listItem needed\">"+$("#itemEntry").val()+"<span class=\"fa fa-trash-o \"></span></li>");
+		}
+		else{
+			alert("The Item to Add Cannot be Blank.")
+		}
+	});
 
-	$("#plus").click(function(){
+
+	$("#shoppingList")
+
+	.on("click", ".listItem", function(){
+		$(this).toggleClass("needed");			
+		$(this).toggleClass("stroked");	
+	})
+
+	.on("mouseenter",".listItem",function(){	
+		$(this).toggleClass("hovered");		
+	})
+
+	.on("mouseleave",".listItem",function(){
+		$(this).toggleClass("hovered");
 		
-		var neededItems = parseInt($("#neededBadge").text());
-		var newItem = $("#newItem").val();
+	})
 
-		console.log(neededItems)
-		neededItems++;
+	.on("click",".listItem > .fa", function(){
+		$(this).parent(".listItem").remove();
+	})
+});
 
-		$("#neededBadge").text(neededItems);
-
-		$("#neededList").append("<li class='list-group-item'> <span class='glyphicon glyphicon-unchecked'></span>"+ newItem + "</li>");
-	});
-
-
-	$("#ok").click(function(){
-		var inCartItems = parseInt($("#inCartBadge").text());
-		var neededItems = parseInt($("#neededBadge").text());
-		
-
-	});
-
-	$("#minus").click(function(){
-		
-	});
-
-	$("#needed").on('click', 'li', function(e){
-		//alert("click li");
-		$(e).children("li").toggleClass("strike");
-	});
-
-	$("span").click(function(){
-		alert("click span");
-	});
-
-})
+//fa-trash-o

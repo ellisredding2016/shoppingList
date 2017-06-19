@@ -4,56 +4,48 @@
 	<meta charset="UTF-8">
 	<title>ShoppingList</title>
 	
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	<script src="//code.jquery.com/jquery.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
+	<link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+	<script src="https://code.jquery.com/jquery.min.js"></script>
 	<script src="js/app.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
-<body>
-	<!--<div class="container-fluid"> -->
-	  <h1><span class="label label-success">Shopping List!<span></h1>  
-	  
-    <div id="leftSpace" class="col-sm-2"></div>
-    <div id="list" class="col-sm-7">
-		<div id="input"> 
-			<input type="text" class="form-control input-lb" id="newItem">
-		</div>
-
-    	<div id="needed">
-    		<h2 id="neededHeader">
-    			<span class="label label-primary">Needed Items  
-    				<span id="neededBadge" class="badge">0</span>
-    			</span>
-    		</h2>
-    		<ul id="neededList" class="list-group">
-				
-    		</ul>
-    	</div>
-    	<div id="inCart">
-    		<h2 id="inCartHeader">
-    			<span class="label label-primary">In Cart  
-    				<span id="inCartBadge" class="badge">0</span>
-    			</span>
-    		</h2>
-    		<ul id="inCartList">
-				
-    		</ul>
-    	</div>
-    </div>
-    <div id="action" class="col-sm-3">
-	  	<div id="plus" class="list-group"> 
-			<span class="glyphicon glyphicon-plus-sign text-primary" ></span>
-	  	</div>
-	  	<div id="ok"> 
-			<span class="glyphicon glyphicon-ok-sign" ></span>
-	  	</div>
-	  	<div id="minus"> 
-			<span class="glyphicon glyphicon-minus-sign text-danger" ></span>
-	  	</div>
+<body>	
+	<div class="row">
+		<h1 id='title' class='text-center'>Shopping List:</h1>
 	</div>
-	<!--</div> -->
-	
+	<div class='row'>
+		<div id="backgroundImage">
+			<div class='col-xs-1 col-sm-2'>
+				<form id='nameForm'>
+					<input type='text' name='name' value="" id='nameEntry'>
+					<input type="submit" name='submitName' value='Save' id='nameSubmit'>
+				</form>
+				<div>
+					<h4> Lists: </h4>
+					<ul id='nameList'>
+				</div>
+			</div>
+			<div class='col-xs-11 col-sm-10'>				
+				<div id="info"> 
+					<div id="listFormDiv">
+						<form id="listForm">
+							<input type="text" name="input" value="" id="itemEntry">
+							<input type="submit" name="submitButton" value="Save" id="itemSubmit">
+						</form>
+					</div>
+					<div id="listField">
+							<h2> Items </h2>
+							<ul id="shoppingList">
+								
+							</ul>				
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
